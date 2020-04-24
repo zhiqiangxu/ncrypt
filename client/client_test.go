@@ -14,5 +14,5 @@ func TestClient(t *testing.T) {
 	assert.Assert(t, err == nil)
 
 	decipheredText, err := c.Decrypt(cipherText)
-	assert.Assert(t, err == nil && decipheredText == plainText, decipheredText)
+	assert.Assert(t, err == nil && decipheredText == plainText)
 }
